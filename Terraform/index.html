@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sean O'Connor - Resume</title>
+<style>
+  :root {
+    --text-color: #111111;
+    --link-color: #1155cc;
+    --line-color: #111111;
+    --page-max-width: 850px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: var(--text-color);
+    max-width: var(--page-max-width);
+    margin: 0 auto;
+    padding: 40px 45px 60px;
+    line-height: 1.45;
+    font-size: 14.5px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 22px;
+  }
+
+  h1.name {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+  }
+
+  .contact-line {
+    font-size: 14px;
+  }
+
+  .contact-line a {
+    color: var(--text-color);
+    text-decoration: underline;
+  }
+
+  .contact-line a.github-link {
+    color: #b64a2f;
+  }
+
+  .contact-line .sep {
+    margin: 0 6px;
+  }
+
+  section {
+    margin-bottom: 14px;
+  }
+
+  h2.section-title {
+    font-size: 15.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0 0 6px 0;
+    padding-bottom: 3px;
+    border-bottom: 1.4px solid var(--line-color);
+  }
+
+  ul {
+    margin: 4px 0 0 0;
+    padding-left: 22px;
+  }
+
+  ul li {
+    margin-bottom: 3px;
+  }
+
+  ul li a {
+    color: var(--link-color);
+  }
+
+  .entry {
+    margin-bottom: 10px;
+  }
+
+  .entry:last-child {
+    margin-bottom: 0;
+  }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: 700;
+  }
+
+  .entry-subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-style: italic;
+    margin-bottom: 2px;
+  }
+
+  .entry-header .place,
+  .entry-header .dates {
+    white-space: nowrap;
+  }
+
+  .skills-line {
+    margin: 2px 0;
+  }
+
+  .skills-line strong {
+    font-weight: 700;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  @media print {
+    body {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    body {
+      padding: 24px 20px 40px;
+      font-size: 13.5px;
+    }
+    h1.name {
+      font-size: 24px;
+    }
+    .entry-header,
+    .entry-subheader {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1 class="name">SEAN O'CONNOR</h1>
+    <div class="contact-line">
+      +1 (267) 574-0134
+      <span class="sep">|</span>
+      <a href="mailto:seanrobertoconnor@yahoo.com">seanrobertoconnor@yahoo.com</a>
+      <span class="sep">|</span>
+      Schenectady, NY, USA
+      <span class="sep">|</span>
+      <a href="https://linkedin.com/in/sean-o-connor-5b6952171/" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="sep">|</span>
+      <a href="https://github.com/Gawain537" target="_blank" rel="noopener" class="github-link">GitHub</a>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="section-title">Certifications</h2>
+    <ul>
+      <li>Certified Information Systems Security Professional (<strong>CISSP</strong>) | <a href="https://www.credly.com/badges/482dce48-b340-4070-9263-aaa158f096e4">Verify</a></li>
+      <li>Microsoft Azure Security Engineer Associate (<strong>AZ-500</strong>) | <a href="https://learn.microsoft.com/api/credentials/share/en-us/Sean-9813/378A7408E54E3DB?sharingId=C1B210B1BCB6DE99">Verify</a></li>
+      <li>CompTIA <strong>Security+</strong> | <a href="https://www.credly.com/badges/a91b4cf9-1cb8-4e46-bfb6-51b44b5f878d/linked_in_profile">Verify</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="place">Naval Nuclear Laboratory</span>
+        <span class="dates">Aug 2022 - Present</span>
+      </div>
+      <div class="entry-subheader">
+        <span>Cybersecurity Analyst (SOC)</span>
+        <span>Schenectady, NY, USA</span>
+      </div>
+      <ul>
+        <li>Performed threat detection, triage, and incident response across hybrid Azure environments using Microsoft Sentinel, Defender XDR, Defender for Cloud, and endpoint, identity, network, and application telemetry</li>
+        <li>Optimized Azure Log Analytics ingestion, DCRs, retention tiers, and licensing reducing annual SIEM costs by approximately $100,000</li>
+        <li>Created and tuned Sentinel SIEM detections, analytic rules, workbooks, SOAR playbooks, and data connectors to expand detection coverage and automate security operations</li>
+        <li>Investigated and contained three insider-threat incidents, collecting forensic evidence and preventing unauthorized remote access and potential data exfiltration of Controlled information</li>
+        <li>Led threat hunts across hybrid cloud environments and researched emerging threats, adversary TTPs, vulnerabilities, and CVEs to identify detection and mitigation opportunities</li>
+        <li>Integrated and normalized security telemetry from new data sources, collaborating with IT stakeholders to improve SIEM data quality, correlation, investigation, and detection capabilities</li>
+        <li>Developed over 20 security reports and dashboards using KQL, Azure Workbooks, and Power BI, presenting security metrics and findings to executive leaders</li>
+        <li>Supported enterprise AI and data-security initiatives by investigating suspected jailbreak and prompt-injection activity, evaluating emerging AI tooling, and implementing Microsoft Purview information protection, sensitivity labeling, and DLP controls</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="place">IRIS Solutions</span>
+        <span class="dates">Oct 2021 - Jul 2022</span>
+      </div>
+      <div class="entry-subheader">
+        <span>IT Analyst</span>
+        <span>Charlotte, NC, USA</span>
+      </div>
+      <ul>
+        <li>Provided managed IT and security services across diverse customer environments, supporting infrastructure, networking, endpoint, identity, and security operations in a customer-facing role</li>
+        <li>Administered Windows domain controllers, Group Policy, firewalls, and network infrastructure; performed software deployment, configuration, troubleshooting, and technical support</li>
+        <li>Delivered managed security services using SentinelOne EDR, investigating endpoint alerts and supporting incident response and remediation</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="place">Vanguard</span>
+        <span class="dates">Jun 2020 - Aug 2020</span>
+      </div>
+      <div class="entry-subheader">
+        <span>Cybersecurity Intern</span>
+        <span>Remote</span>
+      </div>
+      <ul>
+        <li>Developed Splunk dashboards and reporting aligned to MITRE ATT&CK to visualize detection coverage and identify security monitoring gaps for leadership</li>
+        <li>Performed threat modeling using environment-specific risks, including insider threats, attack surfaces, and existing SIEM detection coverage</li>
+        <li>Led application security for an intern-developed MEAN stack application, implementing security best practices including password hashing, salting, and input validation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Education</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="place">Pennsylvania State University - University Park</span>
+        <span class="dates">Jun 2017 - May 2021</span>
+      </div>
+      <div class="entry-subheader">
+        <span>Bachelor's, Cybersecurity Analytics and operations</span>
+        <span>GPA: 3.56</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Skills</h2>
+    <p class="skills-line"><strong>SIEM:</strong> Sentinel/KQL, Splunk/SPL, QRadar</p>
+    <p class="skills-line"><strong>Cloud:</strong> Microsoft Azure Fundamentals, Bicep, ARM, Terraform</p>
+    <p class="skills-line"><strong>Scripting:</strong> Python, PowerShell, Bash Shell, LogicApps</p>
+  </section>
+
+</body>
+</html>

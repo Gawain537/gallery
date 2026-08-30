@@ -29,12 +29,6 @@ resource "azurerm_storage_account" "storage_account" {
   }
 }
 
-resource "azurerm_storage_account_static_website" "static_website" {
-  storage_account_id = azurerm_storage_account.storage_account.id
-  index_document = "index.html"
-}
-
-
 resource "azurerm_static_web_app" "main" {
   name                = "swa-${var.environment}"
   resource_group_name = azurerm_resource_group.rg.name

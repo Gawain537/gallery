@@ -1,7 +1,12 @@
 terraform {
   required_version = ">=1.0"
 
-  #backend "azurerm" {}
+  backend "azurerm" {
+      resource_group_name  = "rg-tfstate-gallery"
+      storage_account_name = "tfstategallery08292026"
+      container_name       = "tfstate"
+      key                  = "terraform.tfstate"
+  }
 
   required_providers {
     azurerm = {

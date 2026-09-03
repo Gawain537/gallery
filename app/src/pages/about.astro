@@ -1,0 +1,117 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { site, social } from "../config";
+
+// ── Edit everything below to tell your own story. ───────────────────────────
+// The little "fact" cards are just example fields — rename them, add more, or
+// remove the whole block if you prefer plain prose.
+const facts = [
+    { label: "Placeholder", line: "Placeholder", muted: "Your City, Country" },
+    { label: "Placeholder", line: "Placeholder", muted: "Landscapes, travel, the everyday" },
+    { label: "Placeholder", line: "Placeholder", muted: "Always learning" },
+];
+---
+
+<Layout
+    title="About"
+    description={`About ${site.name} — artist.`}
+>
+    <article class="page prose">
+        <h1 class="page__title">About</h1>
+
+        <p class="lede">
+            I was born in China where I spent my childhood during World War II. My
+            family moved to Taiwan in 1949 and I spent my teenage and college years
+            there. After earning my Bachelor of Arts in Art Education from the
+            National Taiwan Normal University, I realized that teaching was not my
+            passion. I realized that I wanted to be an artist, so I needed to
+            broaden my view of the world and expose myself to the master works of
+            Western art. So I came to the United States in 1958 to further my
+            education as an artist. A full scholarship enabled me to enroll in a
+            coordinating program at the Penn Academy of Fine Arts and at the
+            University of Pennsylvania on another scholarship where I earned my
+            Master of Fine Arts in Art.
+        </p>
+
+        <p>
+            But, as an obedient daughter of old fashion minded Chinese parents, I
+            strayed away from pursuing my dream of becoming an artist. Instead of
+            pursuing my career, I got married and focused on my role as a wife and
+            a mother. I painted a little and participated in some art exhibitions
+            now and then, but I did not take my art seriously. I also did some art
+            related odd jobs here and there. I eventually ended up running a small
+            needlepoint design business, Lee’s Needle Art Inc, for forty something
+            years. Not until our three children were all grown and my husband was
+            retired was I no longer occupied with family duties and had time to
+            spare. I started to paint portraits of our grandchildren for they were
+            all so cute and lovely that they inspired me to catch the innocent age
+            as expressions of love.
+        </p>
+
+        <p>
+            Reflecting back on my life, I have fulfilled what my parents expected
+            of me but not my dreams of being an artist. At the same time I also
+            realized that although I am getting older day-by-day and year-by-year,
+            fortunately I am still in good physical health and of sound mind, and
+            my passion for art is still alive.
+        </p>
+
+        <p>
+            Now, I feel the urgent need to work extra hard and diligently in order
+            to make up for lost time in pursuing my art. Now, I spend all my spare
+            time and energy concentrating and focusing on developing my art form
+            and polishing my skills to reach my goal of becoming an artist. I
+            believe in an old Chinese saying that one’s art can only be as good as
+            oneself and that the artist is only as good as their art. Therefore, in
+            order to be a good artist, I begin with being a good person. Hopefully,
+            some of my stories are worth being heard.
+        </p>
+
+        <p>
+            When my husband had a bad fall almost four years ago, he was paralyzed
+            on his entire left side and needed maximum care. This is why he moved
+            to a skilled nursing facility in the Quadrangle. Soon after, I also
+            moved there to be near him so that I could care for him. Those were
+            difficult times. At first it seemed sad and confined. However, I made
+            the most of the situation. I realized the flip side of the coin is
+            maybe a blessing in disguise. Since he is being taken care of, it
+            allows me a lot of free time. Therefore, the confinement also gives me
+            the freedom to pursue my passion of painting. Now I can paint as I wish
+            almost every day in my home studio.
+        </p>
+
+        <p>
+            Part of myself feels as if I were a child or a beginner artist full of
+            passion and enthusiasm. As you can see, I am not afraid of adventuring
+            with different mediums and ways to express myself. I have not developed
+            a personal unique style yet, and am experimenting with different
+            techniques and ways to express myself. But for now, I am happy to
+            present my accumulated paintings in various stages to you. Hopefully
+            one day, I will have a more mature and unique style of painting of my
+            own.
+        </p>
+
+        <div class="facts">
+            {
+                facts.map((f) => (
+                    <section class="fact">
+                        <h2 class="fact__label">{f.label}</h2>
+                        <p class="fact__line">{f.line}</p>
+                        <p class="fact__muted">{f.muted}</p>
+                    </section>
+                ))
+            }
+        </div>
+
+        <p>
+            <a
+                class="text-link"
+                href={social.github}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Find me elsewhere →
+            </a>
+        </p>
+    </article>
+</Layout>
